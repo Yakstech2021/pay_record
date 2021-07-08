@@ -1,0 +1,86 @@
+{% extends 'home.html' %}
+
+{% block title %}
+Payment
+{% endblock %}
+{% block content %}
+<br>
+<form method="POST">
+    <br>
+    <div class="form-group">
+   <div class="form-group row">
+    <label for="input" class="col-sm-2 col-form-label">Payment name</label>
+    <div class="col-sm-4">
+      <input name="ptname" type="text" class="form-control" id="input" placeholder="Enter Payment name ..">
+    </div>
+  </div>
+        <br>
+  <div class="form-group">
+   <div class="form-group row">
+    <label for="input1" class="col-sm-2 col-form-label">Cash From bank</label>
+    <div class="col-sm-4">
+      <input name="cash4b" type="number" class="form-control" id="input1" placeholder="Enter Cash Amount ..">
+    </div>
+  </div>
+    <br>
+  <div class="form-group row">
+    <label for="input2" class="col-sm-2 col-form-label">Cash To bank</label>
+    <div class="col-sm-4">
+      <input name="cash2b" type="number" class="form-control" id="input2" placeholder="Enter Cash Amount ..">
+    </div>
+  </div>
+    <br>
+      <div class="form-group row">
+    <label for="input3" class="col-sm-2 col-form-label">Revenue From Counter</label>
+    <div class="col-sm-4">
+      <input name="revenue" type="number" class="form-control" id="input3" placeholder="Enter Cash Amount ..">
+    </div>
+  </div>
+    <br>
+  <div class="form-group row">
+    <label for="input4" class="col-sm-2 col-form-label">Remittance From Counter</label>
+    <div class="col-sm-4">
+      <input name="remittance" type="number" class="form-control" id="input4" placeholder="Enter Cash Amount ..">
+    </div>
+    </div>
+    <br>
+      <div class="form-group row">
+    <label for="input5" class="col-sm-2 col-form-label">Deposit From Counter</label>
+    <div class="col-sm-4">
+      <input name="deposit" type="number" class="form-control" id="input5" placeholder="Enter Cash Amount ..">
+    </div>
+    </div>
+   
+      </div>
+      <div class="form-group row">
+        <label for="input5" class="col-sm-2 col-form-label">Revenue</label>
+        <div class="col-sm-4">
+          <input name="rev" type="number" class="form-control" id="input5" placeholder="Enter Revenue ..">
+        </div>
+        </div>
+        <div class="form-group row">
+          <label for="input5" class="col-sm-2 col-form-label">Remittance</label>
+          <div class="col-sm-4">
+            <input name="remit" type="number" class="form-control" id="input5" placeholder="Enter remittance ..">
+          </div>
+          </div>
+          <div class="form-group row">
+            <label for="input5" class="col-sm-2 col-form-label">Deposit</label>
+            <div class="col-sm-4">
+              <input name="dep" type="number" class="form-control" id="input5" placeholder="Enter remittance ..">
+            </div>
+            </div>
+         
+<br>
+    <div class="form-group row">
+    <div class="row-sm-2 col-sm-8">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </div>
+  </div>
+   {% csrf_token %}
+    </div>
+</form>
+
+
+{% endblock %}
